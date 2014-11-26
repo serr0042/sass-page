@@ -1,0 +1,60 @@
+@media #{$phone}
+{
+    #iconic-tool, #iconic-lib, #iconic-cog {
+        max-width: 75%;
+        margin-top: 20px;
+    }
+    .col-3-box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+    }
+    .col-4-box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+    }
+}
+@media #{$tinytablet}
+{
+    #iconic-tool, #iconic-lib, #iconic-cog {
+        max-width: 75%;
+        margin-top: 20px;
+    }
+}
+@media #{$tablet}
+{
+    .col-3-box {
+        @include equalSpaced(3, 2%, 100%);
+    }
+    .col-4-box {
+        @include equalSpaced(4, 2%, 100%);
+    }
+    h2 {
+        font-size: $web-h2;
+    }
+    h3 {
+        font-size: $web-h3;
+    }
+    h4 {
+        font-size: $web-h4;
+    }
+}
+@media #{$desktop}
+{
+    .col-3-box {
+        @include equalSpaced(3, 2%, 100%);
+    }
+    .col-4-box {
+        @include equalSpaced(4, 2%, 100%);
+    }
+    h2 {
+        font-size: $web-h2;
+    }
+    h3 {
+        font-size: $web-h3;
+    }
+    h4 {
+        font-size: $web-h4;
+    }
+}

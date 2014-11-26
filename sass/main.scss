@@ -1,0 +1,162 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'media-queries';
+@import 'sticky-footer';
+body {
+    background-attachment: fixed;
+    background-color: $background-color;
+    background-image: url("http://static.simpledesktops.com/uploads/desktops/2014/10/22/Buzz.png");
+    background-position: center; 
+}
+header {
+    margin-bottom: 50px;
+    max-width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+#logo-img {
+    max-width: 100%;
+}
+h2 {
+    color: $txt-white;
+    text-shadow: $head-shadow;
+    font-family: $head-font;
+    font-weight: 100;
+    font-size: $mobile-h2;
+    padding: 0px 20px 0px 20px;
+}
+.focal-row {
+    background-color: $div-grey;
+    background-attachment: fixed;
+    opacity: 0.95;
+    @include border-radius (30px);
+    margin: $row-margin;
+    padding: 35px;
+    height: auto;
+    overflow: auto;
+}
+.col-3-box {
+    float: left;
+    text-align: center;
+}
+
+.mask{
+    background-color: $txt-white;
+    border-radius: 30px;
+    transition: all 0.5s linear;
+    opacity: 0;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.col-3-box h3 {
+    background: transparent;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.col-3-box p {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    
+}
+.col-3-box:hover .mask{
+    opacity: 1;
+}
+.col-3-box:hover h3,
+.col-3-box:hover p {
+    transform: scale(1);
+    opacity: 1;
+}
+#iconic-tool,
+#iconic-lib,
+#iconic-cog {
+    fill: $txt-white;
+}
+#iconic-tool:hover {
+    fill: $bck-blue;
+}
+#iconic-lib:hover {
+    fill: $bck-yellow;
+}
+#iconic-cog:hover {
+    fill: $bck-pink;
+}
+h3 {
+    color: #333;
+    font-family: $head-font;
+    font-size: $mobile-h3;
+    font-weight: 100;
+}
+p {
+    font-family: $p-font;
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.row {
+    background-color: $div-grey;
+    background-attachment: fixed;
+    opacity: 0.95;
+    @include border-radius (30px);
+    margin: $row-margin;
+    padding: 30px;
+    height: auto;
+    overflow: auto;
+}
+.col-4-box {
+    float: left;
+    text-align: center;
+}
+h4 {
+    font-family: $head-font;
+    font-weight: 100;
+    font-size: $mobile-h4;
+}
+.col-4-box:hover p {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+.col-4-box h4 {
+    padding-bottom: 20px;
+}
+.col-4-box:hover h4 {
+    transform: scale(1.06);
+}
+.btn {
+    visibility: hidden;
+    @include btn-box-shadow ($btn-shadow);
+    background-color: $btn-grey;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    color: $txt-white;
+    font-family: $head-font;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px $background-color;
+}
+.col-4-box:hover .btn {
+    visibility: visible;
+    @include col-4-transform ($btn-transform);
+}
+.btn:hover {
+    @include btn-hover ($btn-hover);
+}
+footer {
+    margin-top: 25px;
+    background-color: $background-color;
+    text-align: center;
+    color: $logo-color-2;
+}
+h5 {
+    font-family: $head-font;
+    font-weight: 100;
+    font-size: 1rem;
+}

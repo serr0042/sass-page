@@ -1,0 +1,37 @@
+//Colours
+$logo-color-1: hsl(348, 17%, 60%);
+$logo-color-2: hsl(293, 57%, 100%);
+$div-grey: #DCDCDC;
+$txt-white: #ffffff;
+$btn-grey: #C0C0C0;
+$bck-blue: #15f0fd;
+$bck-yellow: #fede15;
+$bck-pink: #cc1183;
+$background-color: #373737;
+
+//Shadows
+$head-shadow:-1px -1px 0 $background-color, 1px -1px 0 $background-color, -1px 1px 0 $background-color, 1px 1px 0 $background-color;
+
+//Margins
+$row-margin: 25px 25px 40px 25px;
+
+//Buttons
+$btn-transform: scale(1) translateY(-70px);
+$btn-shadow:0px 10px 14px -7px $bck-blue;
+$btn-hover:0px 10px 14px -7px $bck-pink;
+
+//Fonts
+$head-font: 'Roboto', sans-serif;
+$p-font: 'Yanone Kaffeesatz', sans-serif;
+$mobile-h2: 3.854rem;
+$web-h2: 6.854rem;
+$mobile-h3: 3.236rem;
+$web-h3: 4.236rem;
+$mobile-h4: 1.618rem;
+$web-h4: 2.618rem;
+
+//Media Queries
+$phone: "(max-width: 499px)";
+$tinytablet: "(min-width: 500px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";

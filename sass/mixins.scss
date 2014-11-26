@@ -1,0 +1,35 @@
+@mixin equalSpaced( $num_of_cols, $spacing, $width ){
+    width:($width - ($spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+    margin-left: $spacing;
+    
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin col-4-transform($btn-transform) {
+    -webkit-transform: $btn-transform;
+    -moz-transform: $btn-transform;
+    -ms-transform: $btn-transform;
+    -o-transform: $btn-transform;
+    transform: $btn-transform;
+}
+
+@mixin btn-box-shadow($btn-shadow) {
+    -moz-box-shadow: $btn-shadow;
+    -webkit-box-shadow: $btn-shadow;
+    box-shadow: $btn-shadow;
+}
+
+@mixin btn-hover($btn-hover) {
+    -moz-box-shadow: $btn-hover;
+    -webkit-box-shadow: $btn-hover;
+    box-shadow: $btn-hover;
+}
